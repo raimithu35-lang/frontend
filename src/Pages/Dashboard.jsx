@@ -57,9 +57,7 @@ function Dashboard() {
 
   const customersPerPage = 5;
 
-  /* =========================
-     SEARCH + SORT
-  ========================= */
+  
 
   const filteredCustomers = customers
     .filter((customer) => {
@@ -91,10 +89,7 @@ function Dashboard() {
     startIndex + customersPerPage
   );
 
-  /* =========================
-     HANDLERS
-  ========================= */
-
+ 
   const handleSearch = (e) => {
     setSearch(e.target.value);
     setPage(1);
@@ -111,9 +106,7 @@ function Dashboard() {
     setPage(1);
   };
 
-  /* =========================
-     CUSTOMER TABLE
-  ========================= */
+ 
 
   const CustomerTable = () => {
     return (
@@ -217,10 +210,7 @@ function Dashboard() {
     );
   };
 
-  /* =========================
-     DASHBOARD
-  ========================= */
-
+  
   const DashboardContent = () => {
     return (
       <>
@@ -246,7 +236,7 @@ function Dashboard() {
 
             <div>
               <p>Members</p>
-              <h3>1,893</h3>
+              <h3>100</h3>
               <small className="negative">
                 ↓ 1% this month
               </small>
@@ -264,9 +254,7 @@ function Dashboard() {
 
               <div className="mini-avatars">
                 <span>👩</span>
-                <span>👨</span>
-                <span>👩</span>
-                <span>👨</span>
+               
               </div>
             </div>
           </div>
@@ -311,9 +299,7 @@ function Dashboard() {
     );
   };
 
-  /* =========================
-     PHONE
-  ========================= */
+  
 
   const PhoneContent = () => {
     return (
@@ -336,7 +322,7 @@ function Dashboard() {
             <p>Apple smartphone</p>
 
             <div className="product-bottom">
-              <strong>$999</strong>
+              <strong>1,20,000</strong>
               <span className="product-stock">
                 In Stock
               </span>
@@ -349,7 +335,7 @@ function Dashboard() {
             <p>Samsung smartphone</p>
 
             <div className="product-bottom">
-              <strong>$899</strong>
+              <strong>60,000</strong>
               <span className="product-stock">
                 In Stock
               </span>
@@ -362,7 +348,7 @@ function Dashboard() {
             <p>Google smartphone</p>
 
             <div className="product-bottom">
-              <strong>$799</strong>
+              <strong>80,000</strong>
               <span className="product-stock">
                 In Stock
               </span>
@@ -373,9 +359,6 @@ function Dashboard() {
     );
   };
 
-  /* =========================
-     LAPTOP
-  ========================= */
 
   const LaptopContent = () => {
     return (
@@ -398,7 +381,7 @@ function Dashboard() {
             <p>Apple professional laptop</p>
 
             <div className="product-bottom">
-              <strong>$1,999</strong>
+              <strong>2,30,000</strong>
               <span className="product-stock">
                 In Stock
               </span>
@@ -411,7 +394,7 @@ function Dashboard() {
             <p>Dell professional laptop</p>
 
             <div className="product-bottom">
-              <strong>$1,499</strong>
+              <strong>1,50,000</strong>
               <span className="product-stock">
                 In Stock
               </span>
@@ -424,7 +407,7 @@ function Dashboard() {
             <p>HP premium laptop</p>
 
             <div className="product-bottom">
-              <strong>$1,299</strong>
+              <strong>1,20,000</strong>
               <span
                 className="product-stock"
                 style={{ color: "#df0000" }}
@@ -438,9 +421,7 @@ function Dashboard() {
     );
   };
 
-  /* =========================
-     CAMERA
-  ========================= */
+  
 
   const CameraContent = () => {
     return (
@@ -463,7 +444,7 @@ function Dashboard() {
             <p>Professional camera</p>
 
             <div className="product-bottom">
-              <strong>$2,499</strong>
+              <strong>50,000</strong>
               <span className="product-stock">
                 In Stock
               </span>
@@ -476,7 +457,7 @@ function Dashboard() {
             <p>Sony mirrorless camera</p>
 
             <div className="product-bottom">
-              <strong>$2,199</strong>
+              <strong>60,000</strong>
               <span className="product-stock">
                 In Stock
               </span>
@@ -489,7 +470,7 @@ function Dashboard() {
             <p>Nikon mirrorless camera</p>
 
             <div className="product-bottom">
-              <strong>$1,999</strong>
+              <strong>70,000</strong>
               <span className="product-stock">
                 In Stock
               </span>
@@ -499,10 +480,6 @@ function Dashboard() {
       </section>
     );
   };
-
-  /* =========================
-     HEADPHONE
-  ========================= */
 
   const HeadphoneContent = () => {
     return (
@@ -525,7 +502,7 @@ function Dashboard() {
             <p>Apple wireless headphones</p>
 
             <div className="product-bottom">
-              <strong>$249</strong>
+              <strong>50,000</strong>
               <span className="product-stock">
                 In Stock
               </span>
@@ -538,7 +515,7 @@ function Dashboard() {
             <p>Sony wireless headphones</p>
 
             <div className="product-bottom">
-              <strong>$399</strong>
+              <strong>45,000</strong>
               <span className="product-stock">
                 In Stock
               </span>
@@ -551,7 +528,7 @@ function Dashboard() {
             <p>Bose noise cancelling headphones</p>
 
             <div className="product-bottom">
-              <strong>$349</strong>
+              <strong>30,000</strong>
               <span
                 className="product-stock"
                 style={{ color: "#df0000" }}
@@ -565,9 +542,6 @@ function Dashboard() {
     );
   };
 
-  /* =========================
-     CUSTOMERS
-  ========================= */
 
   const CustomersContent = () => {
     return (
@@ -609,9 +583,7 @@ function Dashboard() {
     );
   };
 
-  /* =========================
-     INCOME
-  ========================= */
+  
 
   const IncomeContent = () => {
     return (
@@ -628,7 +600,7 @@ function Dashboard() {
             <div className="income-icon">💰</div>
 
             <p>Total Income</p>
-            <h2>$45,600</h2>
+            <h2>50,000</h2>
 
             <span className="positive">
               ↑ 12.5% this month
@@ -639,7 +611,7 @@ function Dashboard() {
             <div className="income-icon">📈</div>
 
             <p>This Month</p>
-            <h2>$8,420</h2>
+            <h2>5,00,000</h2>
 
             <span className="positive">
               ↑ 8.2% this month
@@ -650,7 +622,7 @@ function Dashboard() {
             <div className="income-icon">📊</div>
 
             <p>Last Month</p>
-            <h2>$7,180</h2>
+            <h2>20,00,000</h2>
 
             <span>July 2026</span>
           </div>
@@ -673,9 +645,7 @@ function Dashboard() {
     );
   };
 
-  /* =========================
-     PROMOTE
-  ========================= */
+  
 
   const PromoteContent = () => {
     return (
@@ -734,10 +704,7 @@ function Dashboard() {
     );
   };
 
-  /* =========================
-     HELP
-  ========================= */
-
+  
   const HelpContent = () => {
     return (
       <section className="content-page">
@@ -797,9 +764,7 @@ function Dashboard() {
     );
   };
 
-  /* =========================
-     PAGE ROUTING
-  ========================= */
+ 
 
   const renderContent = () => {
     switch (activeMenu) {
@@ -835,15 +800,12 @@ function Dashboard() {
     }
   };
 
-  /* =========================
-     MAIN LAYOUT
-  ========================= */
-
+ 
   return (
     <div className="dashboard-page">
       <div className="dashboard-container">
 
-        {/* SIDEBAR */}
+       
 
         <aside className="dashboard-sidebar">
 
@@ -854,7 +816,7 @@ function Dashboard() {
 
           <div className="sidebar-menu">
 
-            {/* DASHBOARD */}
+           
 
             <button
               className={
@@ -1009,7 +971,7 @@ function Dashboard() {
           </div>
         </aside>
 
-        {/* MAIN CONTENT */}
+      
 
         <main className="dashboard-main">
 
